@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joki Tugas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            background-color: #1f2937;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 600;
+        }
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-content h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #1f2937;
+        }
+        .product-content p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+        .product-content .price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #10b981;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            main {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+            .product-content h2 {
+                font-size: 1.2rem;
+            }
+            .product-content p {
+                font-size: 0.9rem;
+            }
+            .product-content .price {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JokiTugas</h1>
+    </header>
+    <main>
+        <!-- Product 1 with link -->
+        <a href="https://wa.link/y15hor" class="product">
+            <img src="product1.jpg" alt="Produk 1">
+            <div class="product-content">
+                <h2>Makalah</h2>
+                <p>10 lembar</p>
+                <p>mulai dari</p>
+                <p class="price">Rp 40.000</p>
+            </div>
+        </a>
+
+        <!-- Product 2 with link -->
+        <a href="https://wa.link/boaruf" class="product">
+            <img src="product2.jpg" alt="Produk 2">
+            <div class="product-content">
+                <h2>Slide PPT</h2>
+                <p>6 slide</p>
+                <p>mulai dari</p>
+                <p class="price">Rp 25.000</p>
+            </div>
+        </a>
+
+        <!-- Product 3 with link -->
+        <a href="https://wa.link/rgd2a9" class="product">
+            <img src="product3.jpg" alt="Produk 3">
+            <div class="product-content">
+                <h2>Video Editting</h2>
+                <p>style | durasi | tingkat kesulitan</p>
+                <p>mulai dari</p>
+                <p class="price">Rp 25.000</p>
+            </div>
+        </a>
+
+        <!-- Product 4 with link -->
+        <a href="https://wa.link/t6hqej" class="product">
+            <img src="product4.jpg" alt="Produk 4">
+            <div class="product-content">
+                <h2>Poposal</h2>
+                <p>menyesuaikan</p>
+                <p>mulai dari</p>
+                <p class="price">Rp 40.000</p>
+            </div>
+        </a>
+    </main>
+    <footer>
+        &copy; 2025 imamiksan. All rights reserved.
+    </footer>
+</body>
+</html>
